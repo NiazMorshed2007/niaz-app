@@ -2,6 +2,7 @@
 @import "mixin";
 @import "fonts";
 @import "header";
+@import "banner";
 
 * {
   margin: 0;
@@ -13,4 +14,8 @@ body {
   width: 100%;
   height: 100%;
   font-family: $raleway;
+}
+
+html {
+  scroll-behavior: smooth;
 }

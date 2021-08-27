@@ -1,6 +1,6 @@
 .header {
   width: 100%;
-  background: $bluish;
+  background: transparent;
   padding: 50px 67px 30px;
   @include flex(row);
   align-items: center;
@@ -8,17 +8,18 @@
   position: fixed;
   margin-left: auto;
   margin-right: auto;
+  transition: all 0.3s ease-in-out;
   .nav {
     .nav-links {
       list-style: none;
       @include flex(row);
-      gap: 1.6em;
+      gap: 2.7em;
       text-transform: uppercase;
       a {
         text-decoration: none;
         color: white;
         li {
-          font-size: 18px;
+          font-size: 17px;
           position: relative;
           overflow: hidden;
           &::after {
@@ -37,6 +38,35 @@
             &::after {
               transform: translateX(0%);
             }
+          }
+        }
+      }
+      & > :nth-last-child(1) {
+        color: $transparentBlue;
+        color: $bluish2;
+        li {
+          &::after {
+            content: "";
+            width: 0px;
+            height: 0px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.active {
+  background: white;
+  color: black;
+  padding: 15px 67px 15px;
+  .nav {
+    .nav-links {
+      a {
+        color: $activeClr;
+        li {
+          &::after {
+            background: $activeBck;
           }
         }
       }
