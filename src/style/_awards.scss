@@ -1,0 +1,64 @@
+.awards {
+  width: 100%;
+  padding: 150px 1px 82px 75px;
+  background: $silverType;
+  h1 {
+    font-weight: 600;
+    font-size: 28px;
+    color: $activeClr;
+    margin-bottom: 30px;
+  }
+  p {
+    font-family: $roboto;
+    width: 45%;
+    font-weight: 400;
+    color: $blackish;
+    line-height: 24px;
+  }
+  .award-box-wrapper {
+    padding-top: 70px;
+    padding-bottom: 30px;
+    width: 95%;
+    @include flex(row);
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .box {
+      background: $whiteBack;
+      width: 277px;
+      height: 355px;
+      padding: 50px 30px;
+      border-radius: 10px;
+      h3 {
+        font-weight: 600;
+        font-size: 21px;
+        color: $activeClr;
+        line-height: 28px;
+        margin-top: 7px;
+        margin-bottom: 18px;
+      }
+      p {
+        font-size: 16px;
+        font-family: $roboto;
+        color: $blackish;
+        width: 100%;
+        text-align: center;
+      }
+      .box-footer {
+        margin-top: 40px;
+        @include flex(row);
+        justify-content: center;
+        align-items: center;
+        gap: 1em;
+        color: silver;
+        h4 {
+          font-weight: 600;
+        }
+        p {
+          color: silver;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
