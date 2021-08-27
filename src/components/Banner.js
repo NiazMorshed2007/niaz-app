@@ -25,8 +25,8 @@ function Banner() {
             dummy text of the printing.
           </p>
           <div className="banner-icons">
-            {icons.map((icon) => {
-              return <i className={icon}></i>;
+            {icons.map((icon, index) => {
+              return <i key={index} className={icon}></i>;
             })}
           </div>
         </div>

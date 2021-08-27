@@ -61,16 +61,16 @@
   bottom: 0;
   left: 0;
   background: #3444f1 none repeat scroll 0% 0%;
-  -webkit-transform: translateX(-100%);
-          transform: translateX(-100%);
+  -webkit-animation: linkAnim2 0.6s linear forwards;
+          animation: linkAnim2 0.6s linear forwards;
   -webkit-transition: all 0.4s ease-in;
   transition: all 0.4s ease-in;
   z-index: -1;
 }
 
 .header .nav .nav-links a li:hover::after {
-  -webkit-transform: translateX(0%);
-          transform: translateX(0%);
+  -webkit-animation: linkAnim 0.6s linear forwards;
+          animation: linkAnim 0.6s linear forwards;
 }
 
 .header .nav .nav-links > :nth-last-child(1) {
@@ -98,6 +98,50 @@
 
 .active .nav .nav-links a li::after {
   background: #c2c7fb none repeat scroll 0% 0%;
+}
+
+@-webkit-keyframes linkAnim {
+  from {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  to {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
+@keyframes linkAnim {
+  from {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  to {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
+@-webkit-keyframes linkAnim2 {
+  from {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  to {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+}
+
+@keyframes linkAnim2 {
+  from {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  to {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
 }
 
 #me {
@@ -364,6 +408,19 @@
 
 .project .project-footer {
   padding-top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .project .project-footer .project-footer1 {
@@ -385,6 +442,7 @@
 
 .project .project-footer .project-footer1 h4 span {
   color: #3444f1;
+  font-weight: 600;
 }
 
 .project .project-footer .project-footer1 p {
@@ -397,6 +455,154 @@
   font-weight: 500;
   padding-left: 5px;
   font-family: "Raleway", sans-serif;
+}
+
+.project .project-footer .project-footer2 {
+  height: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding-right: 40px;
+  gap: 1.2em;
+}
+
+.project .project-footer .project-footer2 .left-btn-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.project .project-footer .project-footer2 .left-btn-wrap .left-btn-clone {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+}
+
+.project .project-footer .project-footer2 .left-btn-wrap .left-btn-clone:hover ~ .left-btn {
+  width: 60px;
+  background: #3444f1;
+}
+
+.project .project-footer .project-footer2 .left-btn-wrap .left-btn-clone:hover ~ .left-btn::after {
+  border-color: #3444f1;
+}
+
+.project .project-footer .project-footer2 .left-btn-wrap .left-btn {
+  width: 20px;
+  height: 2px;
+  background: silver;
+  position: relative;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.project .project-footer .project-footer2 .left-btn-wrap .left-btn::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border: none;
+  left: 0;
+  top: -5px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  border-top: 2px solid silver;
+  border-left: 2px solid silver;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.project .project-footer .project-footer2 .left-btn-wrap .left-btn:hover {
+  width: 60px;
+  background: #3444f1;
+}
+
+.project .project-footer .project-footer2 .left-btn-wrap .left-btn:hover::after {
+  border-color: #3444f1;
+}
+
+.project .project-footer .project-footer2 .right-btn-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.project .project-footer .project-footer2 .right-btn-wrap .right-btn-clone {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+}
+
+.project .project-footer .project-footer2 .right-btn-wrap .right-btn-clone:hover ~ .right-btn {
+  width: 60px;
+  background: #3444f1;
+}
+
+.project .project-footer .project-footer2 .right-btn-wrap .right-btn-clone:hover ~ .right-btn::after {
+  border-color: #3444f1;
+}
+
+.project .project-footer .project-footer2 .right-btn-wrap .right-btn {
+  width: 20px;
+  height: 2px;
+  background: silver;
+  position: relative;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.project .project-footer .project-footer2 .right-btn-wrap .right-btn::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border: none;
+  right: 0;
+  top: -5px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  border-bottom: 2px solid silver;
+  border-right: 2px solid silver;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.project .project-footer .project-footer2 .right-btn-wrap .right-btn:hover {
+  width: 60px;
+  background: #3444f1;
+}
+
+.project .project-footer .project-footer2 .right-btn-wrap .right-btn:hover::after {
+  border-color: #3444f1;
 }
 
 * {

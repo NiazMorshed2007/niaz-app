@@ -62,12 +62,23 @@ function Project() {
           <h4>
             FEATURED IN <span>AWWWARDS</span>
           </h4>
-          {vlf.map((item) => (
-            <p>
+          {vlf.map((item, index) => (
+            <p key={index}>
               {item.num}
               <span>{item.txt}</span>
             </p>
           ))}
+        </div>
+
+        <div className="project-footer2">
+          <div className="left-btn-wrap">
+            <div className="left-btn-clone"></div>
+            <div className="left-btn"></div>
+          </div>
+          <div className="right-btn-wrap">
+            <div className="right-btn-clone"></div>
+            <div className="right-btn"></div>
+          </div>
         </div>
       </div>
     </div>
