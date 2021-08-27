@@ -1,0 +1,36 @@
+.project {
+  padding: 100px 1px 82px 75px;
+  .project-txt {
+    width: 48%;
+    h1 {
+      line-height: 80px;
+      font-weight: 500;
+      font-size: 29px;
+      color: $activeClr;
+    }
+    p {
+      font-family: $roboto;
+      font-size: 16px;
+      color: $blackish;
+      line-height: 25px;
+      font-weight: 400;
+    }
+  }
+  .project-category {
+    padding-top: 75px;
+    padding-left: 20px;
+    @include flex(row);
+    gap: 3em;
+    text-transform: uppercase;
+    h3 {
+      font-weight: 500;
+      font-size: 17px;
+      color: $blackish;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      &:hover {
+        color: $bluish2;
+      }
+    }
+  }
+}

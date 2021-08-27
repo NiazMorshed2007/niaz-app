@@ -9,6 +9,7 @@
   margin-left: auto;
   margin-right: auto;
   transition: all 0.3s ease-in-out;
+  z-index: 2;
   .nav {
     .nav-links {
       list-style: none;
@@ -57,9 +58,10 @@
 }
 
 .active {
-  background: white;
+  background: $whiteBack;
   color: black;
   padding: 15px 67px 15px;
+  box-shadow: $bxShadow;
   .nav {
     .nav-links {
       a {
