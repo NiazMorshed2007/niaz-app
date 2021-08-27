@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@600;800&family=Roboto:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500&display=swap");
 .header {
   width: 100%;
   background: transparent;
@@ -38,6 +39,7 @@
           flex-direction: row;
   gap: 2.7em;
   text-transform: uppercase;
+  font-weight: 600;
 }
 
 .header .nav .nav-links a {
@@ -149,7 +151,7 @@
 }
 
 #me .inner-banner .banner-left h4 {
-  font-weight: 300;
+  font-weight: 600;
   font-size: 19px;
 }
 
@@ -161,7 +163,7 @@
 
 #me .inner-banner .banner-left h3 {
   font-size: 20px;
-  font-weight: 200;
+  font-weight: 600;
   line-height: 34px;
 }
 
@@ -184,7 +186,7 @@
 #me .inner-banner .banner-left .banner-txt h5 {
   display: inline;
   font-size: 19px;
-  font-weight: 300;
+  font-weight: 500;
 }
 
 #me .inner-banner .banner-left .banner-txt i {
@@ -255,7 +257,7 @@
 
 .project .project-txt h1 {
   line-height: 80px;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 29px;
   color: #302b4e;
 }
@@ -278,12 +280,12 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  gap: 3em;
+  gap: 3.5em;
   text-transform: uppercase;
 }
 
 .project .project-category h3 {
-  font-weight: 500;
+  font-weight: 600;
   font-size: 17px;
   color: #43414e;
   cursor: pointer;
@@ -293,6 +295,108 @@
 
 .project .project-category h3:hover {
   color: #3444f1;
+}
+
+.project .project-slider {
+  padding-top: 80px;
+}
+
+.project .project-slider .project-slider1 {
+  width: 97%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.project .project-slider .project-slider1 .right {
+  font-family: "Roboto", sans-serif;
+  padding-left: 45px;
+}
+
+.project .project-slider .project-slider1 .right h4 {
+  font-weight: 500;
+  font-size: 17px;
+  word-spacing: 2px;
+  color: #3444f1;
+  margin-bottom: 35px;
+  position: relative;
+  cursor: pointer;
+}
+
+.project .project-slider .project-slider1 .right h4::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 55px;
+  height: 13px;
+  background: #c2c7fb none repeat scroll 0% 0%;
+  opacity: 0.6;
+  bottom: 5%;
+  left: -1%;
+  z-index: -1;
+}
+
+.project .project-slider .project-slider1 .right h1 {
+  font-size: 42px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  color: #302b4e;
+  margin-bottom: 15px;
+}
+
+.project .project-slider .project-slider1 .right p {
+  width: 80%;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #43414e;
+}
+
+.project .project-footer {
+  padding-top: 60px;
+}
+
+.project .project-footer .project-footer1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 4em;
+}
+
+.project .project-footer .project-footer1 h4 {
+  color: #43414e;
+  font-weight: 500;
+  word-spacing: 4px;
+}
+
+.project .project-footer .project-footer1 h4 span {
+  color: #3444f1;
+}
+
+.project .project-footer .project-footer1 p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  color: #43414e;
+}
+
+.project .project-footer .project-footer1 p span {
+  font-weight: 500;
+  padding-left: 5px;
+  font-family: "Raleway", sans-serif;
 }
 
 * {

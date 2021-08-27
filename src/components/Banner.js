@@ -1,6 +1,12 @@
 import React from "react";
 
 function Banner() {
+  const icons = [
+    "fab fa-facebook-f",
+    "fab fa-twitter",
+    "fab fa-instagram",
+    "fab fa-dribbble",
+  ];
   return (
     <div id="me" className="banner">
       <div className="inner-banner">
@@ -19,10 +25,9 @@ function Banner() {
             dummy text of the printing.
           </p>
           <div className="banner-icons">
-            <i class="fab fa-facebook-f"></i>
-            <i class="fab fa-twitter"></i>
-            <i class="fab fa-instagram"></i>
-            <i class="fab fa-dribbble"></i>
+            {icons.map((icon) => {
+              return <i className={icon}></i>;
+            })}
           </div>
         </div>
         <div className="banner-right">

@@ -4,7 +4,7 @@
     width: 48%;
     h1 {
       line-height: 80px;
-      font-weight: 500;
+      font-weight: 600;
       font-size: 29px;
       color: $activeClr;
     }
@@ -20,16 +20,93 @@
     padding-top: 75px;
     padding-left: 20px;
     @include flex(row);
-    gap: 3em;
+    gap: 3.5em;
     text-transform: uppercase;
     h3 {
-      font-weight: 500;
+      font-weight: 600;
       font-size: 17px;
       color: $blackish;
       cursor: pointer;
       transition: all 0.3s ease;
       &:hover {
         color: $bluish2;
+      }
+    }
+  }
+  .project-slider {
+    padding-top: 80px;
+    // @include flex(row);
+    // align-items: center;
+    // justify-content: center;
+    .project-slider1 {
+      width: 97%;
+      @include flex(row);
+      align-items: center;
+      justify-content: center;
+      .right {
+        font-family: $roboto;
+        padding-left: 45px;
+        h4 {
+          font-weight: 500;
+          font-size: 17px;
+          word-spacing: 2px;
+          color: $bluish2;
+          margin-bottom: 35px;
+          position: relative;
+          cursor: pointer;
+          // overflow: hidden;
+          &::before {
+            content: "";
+            position: absolute;
+            display: block;
+            width: 55px;
+            height: 13px;
+            background: $activeBck;
+            opacity: 0.6;
+            bottom: 5%;
+            left: -1%;
+            z-index: -1;
+          }
+        }
+        h1 {
+          font-size: 42px;
+          font-family: $raleway;
+          font-weight: 500;
+          color: $activeClr;
+          margin-bottom: 15px;
+        }
+        p {
+          width: 80%;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 26px;
+          color: $blackish;
+        }
+      }
+    }
+  }
+  .project-footer {
+    padding-top: 60px;
+    .project-footer1 {
+      @include flex(row);
+      gap: 4em;
+      h4 {
+        color: $blackish;
+        font-weight: 500;
+        word-spacing: 4px;
+        span {
+          color: $bluish2;
+        }
+      }
+      p {
+        font-family: $roboto;
+        font-weight: 600;
+        color: $blackish;
+        span {
+          font-weight: 500;
+          padding-left: 5px;
+          font-family: $raleway;
+        }
       }
     }
   }
