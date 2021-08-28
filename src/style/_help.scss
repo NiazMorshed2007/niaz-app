@@ -1,0 +1,19 @@
+.help {
+  width: 100%;
+  background: $silverType;
+  padding: 120px 75px 20px 75px;
+  h1 {
+    font-weight: 600;
+    color: $activeClr;
+    text-align: center;
+  }
+  .help-des {
+    font-family: $roboto;
+    font-weight: 400;
+    color: $blackish;
+    text-align: center;
+    font-size: 16px;
+    line-height: 26px;
+    margin-top: 28px;
+  }
+}

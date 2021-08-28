@@ -4,6 +4,8 @@ import Header from "./components/Header";
 import Banner from "./components/Banner";
 import Project from "./components/Project";
 import Awards from "./components/Awards";
+import WhyMe from "./components/WhyMe";
+import Help from "./components/Help";
 
 function App() {
   return (
@@ -12,6 +14,8 @@ function App() {
       <Banner />
       <Project />
       <Awards />
+      <WhyMe />
+      <Help />
     </div>
   );
 }
