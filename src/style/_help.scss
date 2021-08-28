@@ -1,7 +1,7 @@
 .help {
   width: 100%;
   background: $silverType;
-  padding: 120px 75px 20px 75px;
+  padding: 120px 40px 80px 40px;
   h1 {
     font-weight: 600;
     color: $activeClr;
@@ -15,5 +15,107 @@
     font-size: 16px;
     line-height: 26px;
     margin-top: 28px;
+  }
+  .help-box-wrapper {
+    width: 100%;
+    @include flex(row);
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-top: 40px;
+    .box {
+      background: $whiteBack;
+      width: 580px;
+      height: 295px;
+      border-radius: 10px;
+      box-shadow: $bxShadow2;
+      margin-top: 50px;
+      @include flex(column);
+      justify-content: space-between;
+      padding-top: 50px;
+      .box1 {
+        @include flex(row);
+        align-items: center;
+        justify-content: space-between;
+        padding: 40px;
+        padding-left: 48px;
+        padding-right: 25px;
+        gap: 2.5em;
+        .right {
+          h4 {
+            font-weight: 600;
+            color: $activeClr;
+            font-size: 21px;
+            margin-bottom: 15px;
+          }
+          p {
+            font-family: $roboto;
+            font-weight: 400;
+            color: $blackish;
+          }
+        }
+      }
+      .box2 {
+        border-top: 1px solid rgb(235, 235, 235);
+        padding: 25px;
+        @include flex(row);
+        align-items: center;
+        justify-content: space-between;
+        .box2-1 {
+          @include flex(row);
+          align-items: center;
+          gap: 0.7em;
+          font-family: $roboto;
+          font-weight: 300;
+          color: $activeClr;
+          i {
+            font-size: 12px;
+            padding: 5px;
+            background: $bluish2;
+            border-radius: 50%;
+            color: white;
+          }
+        }
+        .box2-2 {
+          width: 280px;
+          height: 5px;
+          background: rgb(240, 240, 240);
+          border-radius: 4px;
+          position: relative;
+          &::after {
+            content: "";
+            position: absolute;
+            display: block;
+            border-radius: 4px;
+            width: 90%;
+            height: 100%;
+            background: $bluish2;
+            top: 0;
+            left: 0;
+          }
+        }
+      }
+      &:nth-child(2) {
+        .box2-2 {
+          &::after {
+            width: 85%;
+          }
+        }
+      }
+      &:nth-child(3) {
+        .box2-2 {
+          &::after {
+            width: 80%;
+          }
+        }
+      }
+      &:nth-child(4) {
+        .box2-2 {
+          &::after {
+            width: 70%;
+          }
+        }
+      }
+    }
   }
 }

@@ -1,9 +1,24 @@
 import React from "react";
 
-function HelpBox() {
+function HelpBox({ src, head, des, per }) {
   return (
     <div className="box">
-      <p>lorem</p>
+      <div className="box1">
+        <div className="left">
+          <img src={src} alt="" />
+        </div>
+        <div className="right">
+          <h4>{head}</h4>
+          <p>{des}</p>
+        </div>
+      </div>
+      <div className="box2">
+        <div className="box2-1">
+          <i className="material-icons">thumb_up</i>
+          <span>{per}</span>
+        </div>
+        <div className="box2-2"></div>
+      </div>
     </div>
   );
 }

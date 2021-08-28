@@ -943,7 +943,7 @@
 .help {
   width: 100%;
   background: #f9f9f9;
-  padding: 120px 75px 20px 75px;
+  padding: 120px 40px 80px 40px;
 }
 
 .help h1 {
@@ -960,6 +960,154 @@
   font-size: 16px;
   line-height: 26px;
   margin-top: 28px;
+}
+
+.help .help-box-wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-top: 40px;
+}
+
+.help .help-box-wrapper .box {
+  background: white none repeat scroll 0% 0%;
+  width: 580px;
+  height: 295px;
+  border-radius: 10px;
+  -webkit-box-shadow: rgba(101, 106, 160, 0.1) 0.521px 2.954px 50px 0px;
+          box-shadow: rgba(101, 106, 160, 0.1) 0.521px 2.954px 50px 0px;
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 50px;
+}
+
+.help .help-box-wrapper .box .box1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 40px;
+  padding-left: 48px;
+  padding-right: 25px;
+  gap: 2.5em;
+}
+
+.help .help-box-wrapper .box .box1 .right h4 {
+  font-weight: 600;
+  color: #302b4e;
+  font-size: 21px;
+  margin-bottom: 15px;
+}
+
+.help .help-box-wrapper .box .box1 .right p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: #43414e;
+}
+
+.help .help-box-wrapper .box .box2 {
+  border-top: 1px solid #ebebeb;
+  padding: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.help .help-box-wrapper .box .box2 .box2-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.7em;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: #302b4e;
+}
+
+.help .help-box-wrapper .box .box2 .box2-1 i {
+  font-size: 12px;
+  padding: 5px;
+  background: #3444f1;
+  border-radius: 50%;
+  color: white;
+}
+
+.help .help-box-wrapper .box .box2 .box2-2 {
+  width: 280px;
+  height: 5px;
+  background: #f0f0f0;
+  border-radius: 4px;
+  position: relative;
+}
+
+.help .help-box-wrapper .box .box2 .box2-2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  border-radius: 4px;
+  width: 90%;
+  height: 100%;
+  background: #3444f1;
+  top: 0;
+  left: 0;
+}
+
+.help .help-box-wrapper .box:nth-child(2) .box2-2::after {
+  width: 85%;
+}
+
+.help .help-box-wrapper .box:nth-child(3) .box2-2::after {
+  width: 80%;
+}
+
+.help .help-box-wrapper .box:nth-child(4) .box2-2::after {
+  width: 70%;
 }
 
 * {
