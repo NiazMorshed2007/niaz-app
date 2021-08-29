@@ -6,6 +6,8 @@ import Project from "./components/Project";
 import Awards from "./components/Awards";
 import WhyMe from "./components/WhyMe";
 import Help from "./components/Help";
+import Client from "./components/Client";
+import Work from "./components/Work";
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
       <Awards />
       <WhyMe />
       <Help />
+      <Client />
+      <Work />
     </div>
   );
 }
