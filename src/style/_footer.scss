@@ -1,0 +1,108 @@
+.footer {
+  width: 100%;
+  padding: 120px 75px 80px 75px;
+  @include flex(row);
+  align-items: center;
+  justify-content: space-between;
+  background-color: $darkBlue;
+  color: white;
+
+  .left {
+    h3 {
+      font-weight: 600;
+    }
+    h1 {
+      margin-bottom: 90px;
+      font-family: $roboto;
+      color: $bluish2;
+      font-weight: 500;
+      margin-top: 25px;
+    }
+    .icons {
+      @include flex(row);
+      gap: 1.1em;
+      margin-bottom: 20px;
+      i {
+        cursor: pointer;
+        transition: all 0.2s ease;
+        &:hover {
+          color: $bluish2;
+        }
+      }
+    }
+    h5 {
+      font-weight: 400;
+      font-family: $roboto;
+      font-size: 15px;
+      margin-bottom: 80px;
+    }
+    p {
+      padding-top: 20px;
+      font-family: $roboto;
+      @include flex(row);
+      align-items: center;
+      gap: 0.4em;
+      i {
+        font-size: 19px;
+        color: red;
+      }
+    }
+  }
+  .right {
+    font-family: $roboto;
+    padding-bottom: 25px;
+    h5 {
+      font-family: $raleway;
+      font-weight: 600;
+      font-size: 20px;
+      margin-bottom: 30px;
+    }
+    label {
+      position: relative;
+      input {
+        width: 380px;
+        padding: 20px;
+        border-radius: 6px;
+        background-color: $whiteBack;
+        outline: none;
+        border: none;
+        font-family: $roboto;
+        font-weight: 400;
+        color: $activeClr;
+        font-size: 16px;
+      }
+      span {
+        position: absolute;
+        top: 50%;
+        right: 6%;
+        transform: translateY(-50%);
+        color: $bluish2;
+        font-weight: 600;
+        font-family: $raleway;
+      }
+    }
+    .info {
+      padding-top: 70px;
+      @include flex(row);
+      align-items: center;
+      justify-content: space-between;
+      div {
+        p {
+          font-weight: 400;
+        }
+        h5 {
+          font-family: $roboto;
+          font-weight: 500;
+          font-size: 18px;
+          padding-top: 8px;
+        }
+      }
+    }
+    .three {
+      padding-top: 70px;
+      @include flex(row);
+      gap: 1.8em;
+      justify-content: flex-end;
+    }
+  }
+}

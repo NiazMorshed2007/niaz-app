@@ -8,6 +8,7 @@ import WhyMe from "./components/WhyMe";
 import Help from "./components/Help";
 import Client from "./components/Client";
 import Work from "./components/Work";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <Help />
       <Client />
       <Work />
+      <Footer />
     </div>
   );
 }
