@@ -1,6 +1,10 @@
 .work {
   background-color: $silverType;
   padding: 120px 75px 105px 75px;
+  @include tablet {
+    padding: 15px;
+    padding-top: 25px;
+  }
   h1 {
     font-weight: 600;
     text-align: center;

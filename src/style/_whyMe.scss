@@ -1,27 +1,43 @@
 .why-me {
   width: 100%;
   padding: 120px 75px 20px 75px;
+  @include tablet {
+    padding: 40px;
+  }
   .why-me-head {
     text-align: center;
     font-weight: 600;
     color: $activeClr;
     font-size: 30px;
     margin-bottom: 25px;
+    @include tablet {
+      font-size: 25px;
+      margin-bottom: 20px;
+    }
   }
   .why-me-p {
     text-align: center;
     font-family: $roboto;
     font-size: 16px;
     color: $blackish;
+    @include tablet {
+      font-size: 15px;
+    }
   }
   .why-me-box-wrapper {
     padding-top: 100px;
+    padding-top: 40px;
+    @include tablet {
+      padding-top: 5px;
+    }
     @include flex(row);
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     .why-me-box {
       width: 306px;
       height: 201px;
+      margin-top: 80px;
       img {
         margin-bottom: 15px;
       }
@@ -75,11 +91,19 @@
   .why-me-txt-wrapper {
     width: 100%;
     @include flex(row);
+    @include tablet {
+      @include flex(column);
+    }
     align-items: center;
     justify-content: center;
     .left-content {
       width: 45%;
       font-family: $roboto;
+      @include tablet {
+        padding-top: 60px;
+        width: 100%;
+        align-items: flex-start;
+      }
       h1 {
         font-weight: 600;
         color: $activeClr;
@@ -114,10 +138,22 @@
       margin-top: 80px;
       padding-top: 120px;
       @include flex(row);
+      @include tablet {
+        width: 100%;
+        padding-left: 0;
+        padding-top: 0;
+      }
+      @include fourSc {
+        @include flex(column);
+        align-items: center;
+      }
       // align-items: center;
       flex-wrap: wrap;
       .list-wrapper {
         width: 50%;
+        @include fourSc {
+          width: 100%;
+        }
         padding-bottom: 80px;
         h4 {
           font-weight: 600;

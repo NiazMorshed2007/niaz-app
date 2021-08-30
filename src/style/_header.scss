@@ -71,7 +71,7 @@
   background: $whiteBack;
   color: black;
   padding: 15px 67px 15px;
-  @include eightSc {
+  @include tablet {
     padding: 18px 30px 17px;
   }
   box-shadow: $bxShadow;

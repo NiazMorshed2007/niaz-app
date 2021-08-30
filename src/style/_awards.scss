@@ -1,6 +1,11 @@
 .awards {
   width: 100%;
   padding: 150px 1px 82px 75px;
+  @include tablet {
+    padding: 42px;
+    @include flex(column);
+    align-items: center;
+  }
   background: $silverType;
   h1 {
     font-weight: 600;
@@ -14,7 +19,11 @@
     font-weight: 400;
     color: $blackish;
     line-height: 24px;
+    @include tablet {
+      width: 100%;
+    }
   }
+
   .award-box-wrapper {
     padding-top: 70px;
     padding-bottom: 30px;
@@ -22,6 +31,9 @@
     @include flex(row);
     align-items: center;
     justify-content: space-between;
+    @include tablet {
+      justify-content: space-around;
+    }
     flex-wrap: wrap;
     .box {
       background: $whiteBack;
@@ -29,6 +41,9 @@
       height: 355px;
       padding: 50px 30px;
       border-radius: 10px;
+      margin-top: 15px;
+
+      // }
       h3 {
         font-weight: 600;
         font-size: 21px;
