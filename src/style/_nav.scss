@@ -1,0 +1,25 @@
+.mobile-nav {
+  position: absolute;
+  display: block;
+  color: white;
+  top: 50%;
+  right: 8%;
+  transform: translateY(-50%);
+  .burger {
+    display: none;
+    @include tablet {
+      display: block;
+    }
+    .line {
+      position: relative;
+      width: 40px;
+      height: 2px;
+      background-color: $bluish2;
+      margin: 9px;
+    }
+    .line3 {
+      width: 30px;
+      margin-left: auto;
+    }
+  }
+}

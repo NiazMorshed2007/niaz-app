@@ -2,6 +2,11 @@
   width: 100%;
   background: transparent;
   padding: 50px 67px 30px;
+  @include tablet {
+    padding: 50px 57px 30px;
+    margin-left: 0;
+    margin-right: 0;
+  }
   @include flex(row);
   align-items: center;
   justify-content: space-between;
@@ -17,6 +22,9 @@
       gap: 2.7em;
       text-transform: uppercase;
       font-weight: 600;
+      @include tablet {
+        display: none;
+      }
       a {
         text-decoration: none;
         color: white;
@@ -63,6 +71,9 @@
   background: $whiteBack;
   color: black;
   padding: 15px 67px 15px;
+  // @include eightSc {
+  //   padding: 15px 27px 15px;
+  // }
   box-shadow: $bxShadow;
   .nav {
     .nav-links {

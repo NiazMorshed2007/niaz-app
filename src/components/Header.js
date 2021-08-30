@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import HeaderLinks from "./HeaderLinks";
+import Nav from "./Nav";
 
 function Header() {
   const [header, setHeader] = useState(false);
@@ -33,6 +34,9 @@ function Header() {
           <HeaderLinks name="why me" />
           <HeaderLinks name="let's talk" />
         </ul>
+      </div>
+      <div className="mobile-nav">
+        <Nav />
       </div>
     </div>
   );

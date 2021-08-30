@@ -1,5 +1,4 @@
 import React from "react";
-// import "./style/style.css";
 import "./style/style.scss";
 import Header from "./components/Header";
 import Banner from "./components/Banner";
