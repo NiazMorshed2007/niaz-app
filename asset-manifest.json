@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/niaz-app/static/css/main.c35c5e20.chunk.css",
+    "main.js": "/niaz-app/static/js/main.1793a2c7.chunk.js",
+    "main.js.map": "/niaz-app/static/js/main.1793a2c7.chunk.js.map",
+    "runtime-main.js": "/niaz-app/static/js/runtime-main.67807023.js",
+    "runtime-main.js.map": "/niaz-app/static/js/runtime-main.67807023.js.map",
+    "static/js/2.92c0e20b.chunk.js": "/niaz-app/static/js/2.92c0e20b.chunk.js",
+    "static/js/2.92c0e20b.chunk.js.map": "/niaz-app/static/js/2.92c0e20b.chunk.js.map",
+    "static/js/3.984fb281.chunk.js": "/niaz-app/static/js/3.984fb281.chunk.js",
+    "static/js/3.984fb281.chunk.js.map": "/niaz-app/static/js/3.984fb281.chunk.js.map",
+    "index.html": "/niaz-app/index.html",
+    "static/css/main.c35c5e20.chunk.css.map": "/niaz-app/static/css/main.c35c5e20.chunk.css.map",
+    "static/js/2.92c0e20b.chunk.js.LICENSE.txt": "/niaz-app/static/js/2.92c0e20b.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.67807023.js",
+    "static/js/2.92c0e20b.chunk.js",
+    "static/css/main.c35c5e20.chunk.css",
+    "static/js/main.1793a2c7.chunk.js"
+  ]
+}
